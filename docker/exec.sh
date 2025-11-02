@@ -1,0 +1,1 @@
+docker exec -it edge-docker bash

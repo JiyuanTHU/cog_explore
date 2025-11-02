@@ -10,6 +10,7 @@ This repository contains the implementation of the cognitive exploration (Cog Ex
 
 - Docker installed on your system
 - Git
+- **NVIDIA Container Toolkit** (required for systems with NVIDIA GPU to ensure proper graphics rendering and visualization) 
 
 ## Quick Start
 
@@ -22,22 +23,31 @@ cd cog_explore
 
 ### 2. Setup Docker
 
-You have two options:
-
-#### Option A: Pull Pre-built Image (Recommended)
+Pull the pre-built Docker image:
 
 ```bash
 docker pull ghcr.io/jiyuanthu/cog_explore:latest
 ```
 
-#### Option B: Build from Source
+#### For NVIDIA GPU Users
+
+If you have an NVIDIA graphics card, install the NVIDIA Container Toolkit to enable GPU acceleration and proper graphics rendering:
 
 ```bash
-cd docker
-docker build -f Dockerfile -t cog_explore:latest ..
+# Add NVIDIA Container Toolkit repository
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
+curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+
+# Install NVIDIA Container Toolkit
+sudo apt-get update
+sudo apt-get install -y nvidia-container-toolkit
+
+# Restart Docker daemon
+sudo systemctl restart docker
 ```
 
-**Note**: If you encounter Docker credential errors, fix your Docker config:
+**Troubleshooting**: If you encounter Docker credential errors, fix your Docker config:
 ```bash
 mkdir -p ~/.docker
 echo '{"auths": {}}' > ~/.docker/config.json

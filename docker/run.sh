@@ -10,7 +10,7 @@ xauth nlist "$DISPLAY" \
   | xauth -f "$XAUTH" nmerge -
 
 docker run --runtime=nvidia --privileged --gpus all \
-  --name "cos-explore" --rm -it \
+  --name "cog-explore" --rm -it \
   --volume="$XSOCK:$XSOCK:rw" \
   --volume="$XAUTH:$XAUTH:rw" \
   -v /run/user/1000:/run/user/1000 \

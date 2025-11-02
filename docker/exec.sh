@@ -1,1 +1,1 @@
-docker exec -it edge-docker bash
+docker exec -it cog-explore bash

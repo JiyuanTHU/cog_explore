@@ -1,6 +1,10 @@
 # Cognitive Exploration
 
-Cognitive exploration is a exploration system proposed for human-level efficient exploration unknown environment. 
+Cognitive exploration is an exploration system designed to achieve human-level efficiency in exploring unknown environments. This repository contains the benchmarking system and the datasets obtained from experiments and simulations for the manuscript entitled:
+
+> **"Cognitive Mapping and Decision-Making Enable Human-Level Efficiency in Robot Exploration"**
+
+For detailed data availability, please refer to [./data/README.md](./data/README.md).
 
 ## Overview
 

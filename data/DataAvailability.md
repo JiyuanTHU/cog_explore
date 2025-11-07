@@ -1,5 +1,9 @@
 # Data Availability
 
+This document provides instructions on how to obtain and use the simulation and experimental data for the paper submitted to *Science Robotics* entitled:
+
+> **"Cognitive Mapping and Decision-Making Enable Human-Level Efficiency in Robot Exploration"**
+
 ## Dataset Overview
 
 The experimental data is provided as ROS 2 bag files and can be accessed through the following link:

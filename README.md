@@ -1,10 +1,14 @@
-# Cog Explore
+# Cognitive Exploration
 
-A ROS 2 workspace for benchmarking autonomous exploration methods with human pilot performance comparison.
+Cognitive exploration is a exploration system proposed for human-level efficient exploration unknown environment. 
 
 ## Overview
 
 This repository contains the implementation of the cognitive exploration (Cog Explore) method, designed for autonomous robot exploration and navigation benchmarking.
+
+<p align="center">
+  <img src="assets/main_cover.jpg" alt="System Overview" width="600">
+</p>
 
 ## Prerequisites
 
@@ -78,10 +82,6 @@ cd /root/Ji_ws/ros2_ws/gui
 python3 qt_teleop.py
 ```
 
-## Usage
-
-[Add more detailed usage instructions here]
-
 ## Project Structure
 
 ```
@@ -93,21 +93,10 @@ python3 qt_teleop.py
 └── gui/            # GUI applications
 ```
 
-## Contributing
+## Author
 
-[Add contribution guidelines]
+Yuan Ji (yuan.ji@ntu.edu.sg)
 
-## License
-
-[Add license information]
-
-## Citation
-
-If you use this work in your research, please cite:
-
-```
-[Add citation information]
-```
 
 ## Contact
 

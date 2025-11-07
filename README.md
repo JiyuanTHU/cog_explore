@@ -100,8 +100,3 @@ python3 qt_teleop.py
 ## Author
 
 Yuan Ji (yuan.ji@ntu.edu.sg)
-
-
-## Contact
-
-[Add contact information]

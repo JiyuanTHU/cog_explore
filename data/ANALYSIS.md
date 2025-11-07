@@ -1,8 +1,11 @@
 # Cognitive Exploration Results Data
 
-This repository contains the source data files and analysis scripts to generate the main results figures for cognitive exploration experiments.
+This file illustrates The CSC results data structure and how to use them to reproduce the main results figure for the paper entitled: 
+> **"Cognitive Mapping and Decision-Making Enable Human-Level Efficiency in Robot Exploration"**
 
-## Repository Structure
+---
+
+## Files Structure
 
 ```
 ├── simulation/                              # Simulation experiment data and scripts

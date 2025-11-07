@@ -21,5 +21,5 @@ docker run --runtime=nvidia --privileged --gpus all \
   --env="QT_X11_NO_MITSHM=1" \
   --net=host \
   --device=/dev/input/js0 \
-  cog_explore \
+  ghcr.io/jiyuanthu/cog_explore:latest \
   /bin/bash -c "exec bash"
